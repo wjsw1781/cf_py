@@ -3,7 +3,7 @@ name = "python-cron"
 version = "0.1.0"
 description = "Python cron example"
 readme = "README.md"
-requires-python = "=3.13.11"
+requires-python = "3.13.11"
 dependencies = [
     "webtypy>=0.1.7",
     "cloudflare",
