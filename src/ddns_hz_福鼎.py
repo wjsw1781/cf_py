@@ -1,5 +1,4 @@
-import os
-from cloudflare import Cloudflare
+import cloudflare
 
 
 #   pip install cloudflare -i https://pypi.tuna.tsinghua.edu.cn/simple 
@@ -19,7 +18,7 @@ CLOUDFLARE_API_TOKEN = "1DPyxLTGOjnu4_liUx1hiyCWh_b_530F6en2J8eG"
 
 def get_最新_ip_病配置():
         
-    client = Cloudflare(
+    client = cloudflare.Cloudflare(
         api_token=CLOUDFLARE_API_TOKEN,  # This is the default and can be omitted
     )
 

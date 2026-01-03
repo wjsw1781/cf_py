@@ -1,7 +1,8 @@
 from workers import WorkerEntrypoint, Response
 
-import os
-from cloudflare import Cloudflare
+
+
+import cloudflare
 
 
 #   pip install cloudflare -i https://pypi.tuna.tsinghua.edu.cn/simple 
@@ -17,15 +18,14 @@ dns_record_id="b96cdeae461ea2189ddc98973fdbd680"
 # tunnel_id="390c8f0e-7116-4d5e-a93c-dcc7bbf4d417"
 
 CLOUDFLARE_API_TOKEN = "1DPyxLTGOjnu4_liUx1hiyCWh_b_530F6en2J8eG"
-# CLOUDFLARE_API_TOKEN = "b69c9106575defbaa21eb3d8a63f96a351212"
 
 
 def get_最新_ip_病配置():
         
-    client = Cloudflare(
+    client = cloudflare.Cloudflare(
         api_token=CLOUDFLARE_API_TOKEN,  # This is the default and can be omitted
     )
-
+    
     page = client.zero_trust.dex.fleet_status.devices.list(
         account_id=account_id,
         from_="2026-01-01T00:00:00Z",
