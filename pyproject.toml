@@ -3,15 +3,15 @@ name = "python-cron"
 version = "0.1.0"
 description = "Python cron example"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.9"
 dependencies = [
     "webtypy>=0.1.7",
+    "cloudflare",
 ]
 
 [dependency-groups]
 dev = [
     "workers-py",
     "workers-runtime-sdk",
-    "cloudflare",
 
 ]

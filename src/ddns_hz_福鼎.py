@@ -15,7 +15,6 @@ dns_record_id="b96cdeae461ea2189ddc98973fdbd680"
 # tunnel_id="390c8f0e-7116-4d5e-a93c-dcc7bbf4d417"
 
 CLOUDFLARE_API_TOKEN = "1DPyxLTGOjnu4_liUx1hiyCWh_b_530F6en2J8eG"
-# CLOUDFLARE_API_TOKEN = "b69c9106575defbaa21eb3d8a63f96a351212"
 
 
 def get_最新_ip_病配置():
@@ -80,6 +79,7 @@ def get_最新_ip_病配置():
 
 
 
+    
 if __name__ == '__main__':
 
     get_最新_ip_病配置()
