@@ -13,3 +13,6 @@ in `wrangler.jsonc` to run the example.
 You can also run `uv run pywrangler deploy` to deploy the example.
 
 To test your scheduled handler, run: `curl "http://localhost:8787/cdn-cgi/handler/scheduled?cron=*+*+*+*+*"`
+
+
+测试已经修噶了
