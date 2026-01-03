@@ -1,6 +1,6 @@
 from workers import WorkerEntrypoint, Response
 
-from src.ddns_hz_福鼎 import get_最新_ip_病配置
+from ddns_hz_福鼎 import get_最新_ip_病配置
 class Default(WorkerEntrypoint):
     # runs based on "triggers" in wrangler config
     async def scheduled(self, controller):
